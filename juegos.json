@@ -1,0 +1,17 @@
+[
+    {
+        "imagen": "assets/img/juego1.jpg",
+        "nombre": "Juego 1",
+        "descripcion": "Descripción del Juego 1"
+    },
+    {
+        "imagen": "assets/img/juego2.jpg",
+        "nombre": "Juego 2",
+        "descripcion": "Descripción del Juego 2"
+    },
+    {
+        "imagen": "assets/img/juego3.jpg",
+        "nombre": "Juego 3",
+        "descripcion": "Descripción del Juego 3"
+    }
+]

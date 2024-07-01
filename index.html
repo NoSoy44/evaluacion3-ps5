@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playstation</title>
+    <link rel="stylesheet" href="assets/scss/style.css">
+    <link rel="icon" href="assets/img/LogoPsn.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-md text-white mt-3">
+        <!-- Vector -->
+        <img class="img-fluid consola vector2" src="assets/img/tontoWeon.png" alt="Vector Image Alt Text" />
+
+        <div class="container">
+            <a class="logo navbar-brand" href="index.html">
+                <img src="assets/img/LogoPsn.png" alt="Your Logo Here" class="img-fluid">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu"
+                aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Juegos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Perifericos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nostros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Apartado de Servicios -->
+    <div class="container-fluid my-5">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-11">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-7 text-white text-container">
+                        <h1 class="text-start titulo">PlayStation 5</h1>
+                        <p class="text-start btitulo">La PlayStation 5 es más que una consola; es una puerta de entrada
+                            a mundos extraordinarios y aventuras sin límites. Con un diseño futurista y un rendimiento
+                            impresionante, la PS5 redefine la experiencia de juego, llevando el realismo y la inmersión
+                            a niveles nunca antes vistos. Equipada con un potente hardware y tecnología de vanguardia,
+                            esta consola te permite disfrutar de gráficos ultra realistas, tiempos de carga casi
+                            inexistentes y una jugabilidad fluida que te dejará sin aliento. Prepárate para sumergirte
+                            en un universo de entretenimiento sin igual con la PlayStation 5, donde cada juego es una
+                            nueva aventura esperando ser descubierta.</p>
+                        <!-- Botones -->
+                        <div class="buttons">
+                            <button class="btn btn-primary m-2" id="magicBtn">Comprar</button>
+                            <button class="btn btn-primary m-2" onclick="mostrarAlerta()">Ver Más</button>
+                            <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Ver Video
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="image-container text-center">
+                            <img class="img-fluid consola" src="assets/img/ps5Entera.png"
+                                alt="Descripción de la imagen de la consola" />
+                            <!-- Vector -->
+                            <img class="img-fluid consola vector1" src="assets/img/tontoWeon.png"
+                                alt="Descripción de la imagen vectorial" />
+                        </div>
+                        <div class="buttons1 my-5">
+                            <a href="#" class="btn btn-primary m-2">Comprar</a>
+                            <a href="#" class="btn btn-secondary m-2">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Imagen que aparece parcialmente -->
+        <div class="ctrlpart d-none d-md-block">
+            <img class="img-fluid consola partial" src="assets/img/Ps5Control.png"
+                alt="Descripción de la imagen parcial de la consola" />
+            <!-- Vector -->
+            <img class="img-fluid consola vector3" src="assets/img/tontoWeon.png"
+                alt="Descripción de la imagen vectorial" />
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <video id="modalVideo" controls autoplay class="w-100">
+                        <source src="assets/img/Y2meta.app-PS5 Hardware Reveal Trailer-(720p60).mp4" type="video/mp4">
+                        Tu navegador no soporta la etiqueta de video.
+                    </video>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contenedor juegos -->
+    <div class="container-fluid col-md-11 juegos-container text-white">
+        <div class="row text-center mb-4">
+            <div class="col-12">
+                <h2>Nuevos Juegos</h2>
+                <p>Descubre los últimos lanzamientos que llevan la experiencia de juego a otro nivel. Con gráficos
+                    asombrosos, historias cautivadoras y jugabilidad innovadora, estos nuevos títulos te mantendrán al
+                    borde de tu asiento. ¡No te los pierdas!</p>
+            </div>
+        </div>
+        <div class="row" id="nuevos-juegos">
+            <div class="col-md-4 juego-item">
+                <div class="image-overlay">
+                    <img class="img-fluid rounded" src="assets/img/re4.jpg" alt="Resident Evil 4" />
+                    <div class="overlay">
+                        <div class="overlay-content text-center">
+                            <p>Experimenta el terror con Resident Evil 4</p>
+                            <a href="#" class="btn btn-primary btnBuy">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <h5>Resident Evil 4</h5>
+            </div>
+            <div class="col-md-4 juego-item">
+                <div class="image-overlay">
+                    <img class="img-fluid rounded" src="assets/img/godOfwAR.jpg" alt="God Of War Ragnarok" />
+                    <div class="overlay">
+                        <div class="overlay-content text-center">
+                            <p>Vive la épica saga en God Of War Ragnarok</p>
+                            <a href="#" class="btn btn-primary btnBuy">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <h5>God Of War Ragnarok</h5>
+            </div>
+            <div class="col-md-4 juego-item">
+                <div class="image-overlay">
+                    <img class="img-fluid rounded" src="assets/img/demonSouls.avif" alt="Demon's Souls" />
+                    <div class="overlay">
+                        <div class="overlay-content text-center">
+                            <p>Enfréntate a desafíos épicos en Demon's Souls</p>
+                            <a href="#" class="btn btn-primary btnBuy">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <h5>Demon's Souls</h5>
+            </div>
+        </div>
+        <div class="row text-center mt-4">
+            <div class="col-12">
+                <button id="mostrar-mas-juegos" class="btn btn-secondary">Mostrar más juegos</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="container-fluid my-2 text-white control-section">
+        <h2 class="mb-5">DualSense Pro</h2>
+        <!-- Video de Fondo -->
+        <div class="video-container">
+            <video class="video-background" autoplay loop muted>
+                <source src="assets/img/DualSense-Edge-Features-Trailer-_-PS5.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+
+        <!-- Contenido Principal sobre el Video -->
+        <div class="content-over-video">
+            <div class="row text-center mb-4">
+                <div class="col-12">
+                    <p class="my-5">El DualSense Pro es el mando definitivo para los jugadores más exigentes. Con un
+                        diseño ergonómico mejorado y funcionalidades avanzadas, ofrece una experiencia de juego más
+                        inmersiva y precisa. Los gatillos adaptativos y la retroalimentación háptica te permiten sentir
+                        cada acción y movimiento del juego, mientras que los botones personalizables y la mayor duración
+                        de la batería aseguran largas sesiones de juego sin interrupciones. Eleva tu forma de jugar con
+                        el DualSense Pro y descubre una nueva dimensión de control y precisión.</p>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-6 text-center">
+                    <img class="img-fluid control" src="assets/img/Ps5ProController.png"
+                        alt="Descripción de la imagen del control 1">
+                    <h5 class="my-4">Diseño Frontal del DualSense Pro</h5>
+                    <p class="my-4">El DualSense Pro destaca por su diseño elegante y futurista, con una disposición de
+                        botones intuitiva y joysticks analógicos de alta precisión. Los gatillos adaptativos y la
+                        retroalimentación háptica proporcionan una respuesta táctil sin igual, haciendo cada juego más
+                        realista y emocionante</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img class="img-fluid control" src="assets/img/ps5ProFrontEnd.png"
+                        alt="Descripción de la imagen del control 2">
+                    <h5 class="my-4">Innovación en la Parte Posterior del DualSense Pro</h5>
+                    <p class="my-4">La parte trasera del DualSense Pro presenta un agarre texturizado que mejora la
+                        comodidad durante largas sesiones de juego. Además, incluye botones adicionales programables,
+                        permitiendo personalizar el mando según tus preferencias de juego. Disfruta de una mayor
+                        autonomía gracias a su batería de larga duración, asegurando que siempre estés listo para la
+                        acción.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Nuevos exclusivos-->
+    <div class="container-fluid my-5 text-white exclusivos-section">
+        <div class="row text-center mb-5">
+            <div class="col-12">
+                <h2>Nuevos Exclusivos</h2>
+            </div>
+        </div>
+
+
+        <div class="row exclusivo text-center align-items-center justify-content-center mb-4">
+            <!-- Imagen -->
+            <div class="col-md-6 text-center order-md-2 position-relative">
+                <div class="image-background">
+                    <img class="img-fluid exclusivo-img" src="assets/img/Grupo 20.png">
+                    <div class="glitch__layers">
+                        <div class="glitch__layer"></div>
+                        <div class="glitch__layer"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Título y Descripción -->
+            <div class="col-md-6 text-md-right order-md-1">
+                <h3>Spider-Man 2</h3>
+                <p>Sumérgete en la ciudad de Nueva York con "Spider-Man 2", donde la acción y la aventura alcanzan
+                    nuevas alturas. En esta entrega, Peter Parker y Miles Morales se unen para enfrentar a enemigos
+                    formidables y desentrañar una trama llena de giros inesperados. Con gráficos impresionantes, una
+                    jugabilidad dinámica y una narrativa envolvente, "Spider-Man 2" te permite balancearte entre
+                    rascacielos, realizar acrobacias espectaculares y sentirte como el verdadero Spider-Man. Prepárate
+                    para una experiencia épica que desafiará tus habilidades y te mantendrá al borde de tu asiento.</p>
+            </div>
+
+        </div>
+
+
+
+        <div class="row exclusivo text-center align-items-center justify-content-center">
+            <!-- Imagen -->
+            <div class="col-md-6 text-center order-md-1 tlou">
+                <div class="image-background">
+                    <img class="img-fluid exclusivo-img" src="assets/img/tlou-2.png"
+                        alt="Descripción de la imagen exclusivo 2">
+                    <div class="glitch__layers">
+                        <div class="glitch__layer2"></div>
+                        <div class="glitch__layer2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Descripción -->
+            <div class="col-md-6 text-md-left order-md-2">
+                <h3>The Last Of Us Part II</h3>
+                <p>"The Last of Us Part II" es una obra maestra que combina narrativa profunda, personajes complejos y
+                    un mundo post-apocalíptico inmersivo. Sigue a Ellie en su búsqueda de justicia y venganza, mientras
+                    navega por paisajes devastados y enfrenta peligros tanto humanos como infectados. Con gráficos de
+                    última generación, un diseño de sonido impecable y una jugabilidad que equilibra la acción y la
+                    estrategia, esta secuela no solo expande el universo del juego original, sino que también plantea
+                    preguntas provocadoras sobre la moralidad, el amor y la redención. Una experiencia emocionalmente
+                    impactante y técnicamente sobresaliente.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <!-- Logo Section -->
+                <div class="col-md-4 text-center text-md-left">
+                    <a class="logo navbar-brand" href="index.html">
+                        <img src="assets/img/LogoPsn.png" alt="Your Logo Here" class="img-fluid">
+                    </a>
+                </div>
+                <!-- Social Media Links -->
+                <div class="col-md-4 text-center">
+                    <h5 class="mb-3">Síguenos en</h5>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <!-- Links -->
+                <div class="col-md-4 text-center text-md-right">
+                    <h5 class="mb-3">Enlaces</h5>
+                    <a href="#" class="text-white d-block mb-2">Inicio</a>
+                    <a href="#" class="text-white d-block mb-2">Sobre nosotros</a>
+                    <a href="#" class="text-white d-block mb-2">Servicios</a>
+                    <a href="#" class="text-white d-block mb-2">Contacto</a>
+                </div>
+            </div>
+            <!-- Copyright Section -->
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Tu Compañía. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3 cont-tempori">
+            <div id="temp" class="alert alert-primary text-center" role="alert">
+                Tiempo en la página: 00:00
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

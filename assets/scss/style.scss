@@ -1,0 +1,627 @@
+@import '../bootstrap-5.3.3/scss/bootstrap.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  background: linear-gradient(to bottom, rgba(24, 25, 30, 1), rgba(30, 70, 230, 1) 300%);
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Merriweather", serif !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
+}
+
+
+h2 {
+  font-size: 100px !important;
+}
+
+p {
+  font-size: 20px !important;
+}
+
+
+/* Contenedor principal */
+.container-fluid {
+  padding: 40px 20px;
+}
+
+/* Estilo del logo */
+.logo img {
+  max-width: 60px;
+  height: auto;
+}
+
+.vector2 {
+  z-index: -1;
+  position: absolute;
+  width: 500px !important;
+  margin-top: -168px;
+  margin-left: -288px;
+  transform: rotate(-131deg);
+}
+
+
+
+
+
+/* Enlaces de navegación */
+a.nav-link {
+  color: white !important;
+}
+
+/* Estilo de las imágenes de consola */
+.consola {
+  width: 320px;
+  height: auto;
+}
+
+.titulo {
+  font-size: 115px;
+}
+
+.btitulo {
+  font-size: 20px;
+}
+
+.vector1 {
+  z-index: -1;
+  position: absolute;
+  width: 500px;
+  margin-top: 51px;
+  margin-left: -423px;
+  transform: rotate(20deg);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons1 {
+  display: none;
+}
+
+
+
+/* Contenedor de imagen parcial */
+.ctrlpart{
+  position: relative;
+  height: auto;
+  z-index: -1;
+}
+
+.ctrlpart .partial {
+  position: absolute;
+  left: -7%;
+  width: 525px;
+  height: auto;
+  top: -245px;
+  transition: all 0.5s ease-in-out;
+  transform: rotate(-15deg);
+}
+
+.vector3 {
+  z-index: -1;
+  position: absolute;
+  width: 500px;
+  margin-top: -373px;
+  margin-left: 35px;
+  transform: rotate(-174deg);
+}
+
+.ctrlpart:hover .partial {
+  left: 0;
+}
+
+
+/* Estilos de los botones */
+.btn-primary {
+  background-color: #2c54ff !important;
+  border: none !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 140px;
+  height: 60px;
+  transition: background-color 0.3s ease;
+  align-items: center;
+  justify-content: center !important;
+  display: flex !important;
+}
+
+.btn-primary:hover {
+  background-color: #2056b3 !important;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border: none !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 140px;
+  height: 60px;
+  transition: background-color 0.3s ease;
+  align-items: center;
+  justify-content: center !important;
+  display: flex !important;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Sección de Juegos */
+.juegos-container {
+  margin: 100px auto 100px auto;
+}
+
+.juego-item {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.juego-item img {
+  max-width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.juego-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.juego-item h5 {
+  margin-top: 10px;
+}
+
+.image-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-content {
+  text-align: center;
+  color: #fff;
+}
+
+.image-overlay:hover .overlay {
+  opacity: 1;
+}
+
+.btnBuy {
+  margin: auto;
+  width: 115px;
+  height: 42px;
+}
+
+.img-bl {
+  max-height: 200px !important;
+  min-width: 100% !important;
+}
+
+/*Sección Control */
+
+
+.control-section {
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.video-container {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content-over-video {
+  position: relative;
+}
+
+.content-over-video h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.content-over-video p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.control {
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.control-section h5 {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.control-section p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+
+/* Seccion exclusvios */
+
+.exclusivos-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.exclusivo h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.exclusivo p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.exclusivo-img {
+  width: 100%;
+  height: auto;
+}
+
+.tlou {
+  margin-bottom: -88px;
+}
+
+
+@media (max-width: 768px) {
+  .exclusivo {
+    flex-direction: column;
+  }
+
+  .exclusivo-img {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
+
+
+/*Footer*/
+.footer {
+  background: linear-gradient(to right, #2a2a2a 0%, #000000 100%);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.footer-logo {
+  max-width: 150px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .fab {
+  font-size: 20px;
+}
+
+.footer .row {
+  align-items: center;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+
+
+/*Efectos De Glitch*/
+.image-background {
+  position: relative;
+}
+
+.img-fluid.exclusivo-img {
+  position: relative;
+  z-index: 1;
+}
+
+.glitch__layers {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.glitch__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://efrmunoz.laboratoriodiseno.cl/final-proyect/wp-content/uploads/2024/06/Grupo-20.png');
+  background-size: cover;
+}
+
+.glitch__layer2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://efrmunoz.laboratoriodiseno.cl/final-proyectv2/assets/img/tlou-2.png');
+  background-size: cover;
+}
+
+
+.glitch__layer:nth-child(1) {
+  transform: translateX(-10%);
+  animation: glitch-anim-1 6.5s infinite linear alternate;
+}
+
+.glitch__layer:nth-child(2) {
+  transform: translateX(10%);
+  animation: glitch-anim-2 6.5s infinite linear alternate;
+}
+
+//Alerta PLugin
+h2#swal2-title {
+  font-size: 29px !important;
+}
+
+.cont-tempori{
+  justify-content: end;
+    display: flex;
+}
+
+#temp {
+  font-weight: bold;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  background-color: #181a20;
+  color: #007bff;
+  padding: 10px;
+  margin-top: 20px;
+  width: 260px;
+  position:initial;
+}
+
+
+
+@keyframes glitch-anim-1 {
+
+  /* Al 0% del tiempo (inicio de la animación) */
+  0% {
+    /* Mostrar solo una pequeña sección en la parte superior del elemento */
+    clip-path: polygon(0 0%, 100% 0%, 100% 5%, 0 5%)
+  }
+
+  10% {
+    clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%)
+  }
+
+  20% {
+    clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%)
+  }
+
+  /* Mostrar una sección muy pequeña en la parte superior */
+  30% {
+    clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%)
+  }
+
+  40% {
+    clip-path: polygon(0 35%, 100% 35%, 100% 35%, 0 35%)
+  }
+
+  50% {
+    clip-path: polygon(0 45%, 100% 45%, 100% 46%, 0 46%)
+  }
+
+  /* Mostrar una sección más grande que va desde el centro hacia abajo */
+  60% {
+    clip-path: polygon(0 50%, 100% 50%, 100% 70%, 0 70%)
+  }
+
+  /* Mostrar una sección en el tercio inferior del elemento */
+  70% {
+    clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%)
+  }
+
+  80% {
+    clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%)
+  }
+
+  90% {
+    clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%)
+  }
+
+  100% {
+    clip-path: polygon(0 60%, 100% 60%, 100% 70%, 0 70%)
+  }
+}
+
+@keyframes glitch-anim-2 {
+  0% {
+    clip-path: polygon(0 15%, 100% 15%, 100% 30%, 0 30%)
+  }
+
+  15% {
+    clip-path: polygon(0 3%, 100% 3%, 100% 3%, 0 3%)
+  }
+
+  25% {
+    clip-path: polygon(0 8%, 100% 8%, 100% 20%, 0 20%)
+  }
+
+  30% {
+    clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%)
+  }
+
+  45% {
+    clip-path: polygon(0 45%, 100% 45%, 100% 45%, 0 45%)
+  }
+
+  50% {
+    clip-path: polygon(0 50%, 100% 50%, 100% 57%, 0 57%)
+  }
+
+  65% {
+    clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%)
+  }
+
+  75% {
+    clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%)
+  }
+
+  80% {
+    clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%)
+  }
+
+  95% {
+    clip-path: polygon(0 45%, 100% 45%, 100% 60%, 0 60%)
+  }
+
+  100% {
+    clip-path: polygon(0 11%, 100% 11%, 100% 15%, 0 15%)
+  }
+}
+
+
+
+
+
+
+
+
+/*Pagina Video*/
+
+/*Efectos Visuales*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.5s;
+  /* Retraso para una carga más llamativa */
+}
+
+
+
+
+
+
+/* Media query para pantallas de 1466px */
+@media (max-width: 1466px) {
+  h1 {
+    font-size: 76px !important;
+  }
+
+  .row.d-flex.justify-content-center {
+    align-items: center !important;
+  }
+
+  .ctrlpart .partial {
+    display: none;
+  }
+
+  h2 {
+    font-size: 60px !important;
+  }
+
+  .vector1 {
+    width: 355px !important;
+    margin-left: -384px !important;
+
+  }
+
+  .vector3 {
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .buttons {
+    display: none !important;
+  }
+
+  .buttons1 {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .juegos-container {
+    margin: 60px auto 60px auto;
+  }
+
+  .row.exclusivo {
+    flex-direction: column-reverse;
+  }
+
+  .order-md-1,
+  .order-md-2 {
+    order: unset;
+  }
+}
+
+@media (max-width: 512px) {
+  h1 {
+    font-size: 50px !important;
+  }
+}
