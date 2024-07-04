@@ -1,20 +1,3 @@
-//Función1 jquery
-$(document).ready(function () {
-    $('.container-fluid.my-5').addClass('section');
-    $(window).on('scroll', function () {
-        let windowHeight = $(window).height();
-        let scrollValue = $(window).scrollTop();
-
-        $('.juegos-container, .control-section, .exclusivos-section').each(function () {
-            let positionFromTop = $(this).offset().top;
-
-            if (scrollValue > positionFromTop - windowHeight + 200) {
-                $(this).addClass('section');
-            }
-        });
-    });
-});
-
 
 //Alerta conn Plugin
 function mostrarAlerta() {
@@ -25,7 +8,18 @@ function mostrarAlerta() {
     });
 }
 
-//Función2 Javascript
+//PLugin Wow
+  new WOW().init();
+
+    new WOW({
+    boxClass: 'wow',      
+    animateClass: 'animate__animated', 
+    offset: 0,            
+    mobile: true,         
+    live: true            
+  }).init();
+
+//Función Javascript
 $(document).ready(function () {
     let modal = document.getElementById('exampleModal');
     let video = document.getElementById('modalVideo');
@@ -80,7 +74,7 @@ $(document).ready(function () {
 });
 
 
-// Funcion 4
+// Funcion 
 $(document).ready(function () {
     function abrirPag(url) {
         window.open(url, '_blank');
@@ -92,7 +86,7 @@ $(document).ready(function () {
     });
 });
 
-//Funcion 5
+//Funcion 
 $(document).ready(function () {
     let tiempoTrans= 0; // Tiempo en segundos
     let temporizador = document.getElementById('temp');
